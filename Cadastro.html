@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Battlelands royale</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <a class="navbar-brand" href="#"><i class="fas fa-car fa-lg" style="color: red;"></i> Super carros</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavBarSuperCarros" aria-controls="NavBarSuperCarros" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="Lamborghini.html">Lamborghini</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="McLaren.html">McLaren</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Ferrari.html">Ferrari</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Bugatti.html">Bugatti</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Koenigsegg.html">Koenigsegg</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav mx-sm-3">
+
+          <li class="nav-item dropdown mx-sm-3">
+            <a class="nav-link dropdown-toggle" href="#" id="LoginCadastro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-users fa-lg"></i>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="LoginCadastro">
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#Login">Login</a>
+              <a class="dropdown-item" href="Cadastro.html">Cadastro</a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <form class="form-inline my-sm-2">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+      </div>
+
+    </nav>
+
+
+    <!-- Conteúdo -->
+    <div class="container mb-sm-5 mt-sm-5">
+      <form class="mb-sm-3">
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="NomeCadastro">Nome</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="NomeCadastro"><i class="fas fa-user"></i></span>
+              </div>
+              <input type="text" class="form-control" id="NomeCadastro" placeholder="Nome" aria-describedby="NomeCadastro">
+            </div>
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="SobrenomeCadastro">Sobrenome</label>
+            <input type="text" class="form-control" id="SobrenomeCadastro" placeholder="Sobrenome">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="DatadeNascimento">Data de Nascimento</label>
+          <input type="date" class="form-control" id="DatadeNascimento">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="RGCadastro">RG</label>
+            <input type="text" class="form-control" id="RGCadastro" placeholder="123.456.789.00">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="CPFCadastro">CPF</label>
+            <input type="text" class="form-control" id="CPFCadastro" placeholder="123.456.789/00">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-sm-6 mb-lg-3">
+            <label for="TelefoneCadastro1">Telefone 1</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="TelefoneCadastro1"><i class="fas fa-phone"></i></span>
+              </div>
+              <input type="tel" class="form-control" id="TelefoneCadastro1" placeholder="(00) 1 2345-6789" aria-describedby="TelefoneCadastro1">
+            </div>
+          </div>
+          <div class="col-sm-6 mb-lg-3">
+            <label for="TelefoneCadastro2">Telefone 2</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="TelefoneCadastro2"><i class="fas fa-phone"></i></span>
+              </div>
+              <input type="tel" class="form-control" id="TelefoneCadastro2" placeholder="(00) 9 8765-4321" aria-describedby="TelefoneCadastro2">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="EmailCadastro">Email</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="EmailCadastro">@</span>
+            </div>
+            <input type="email" class="form-control" id="EmailCadastro" placeholder="Exemplo@Exemplo.com" aria-describedby="EmailCadastro">
+          </div>
+        </div>
+        <div class="form-row mb-sm-3">
+          <div class="form-group col-sm-6">
+            <label for="SenhaCadastro">Senha</label>
+            <input type="password" class="form-control" id="SenhaCadastro" placeholder="Senha">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="ConfirmarSenha">Senha</label>
+            <input type="password" class="form-control" id="ConfirmarSenha" placeholder="Confimar Senha">
+          </div>
+        </div>
+        <div class="custom-control custom-checkbox mb-3 none">
+          <input type="checkbox" class="custom-control-input" id="RememberCadastro">
+          <label class="custom-control-label" for="RememberCadastro">Remember password</label>
+        </div>
+        <a class="btn btn-primary btn-block" href="Página Inicial.html" role="button">Confirmar</a>
+      </form>
+
+      <p class="text-center">Já possuo uma conta? <a href="#" data-toggle="modal" data-target="#Login">Ir para Login</a></p>
+      <p class="text-center"><a href="https://www.google.com/intl/pt/gmail/about/">Esqueci minha Senha</a></p>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="Login">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="mb-sm-3 mt-sm-3">
+              <div class="form-group">
+                <label for="EmailLogin">Email</label>
+                <input type="email" class="form-control" id="EmailLogin" aria-describedby="emailHelp" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="SenhaLogin">Senha</label>
+                <input type="password" class="form-control" id="SenhaLogin" placeholder="Senha">
+              </div>
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="RememberLogin">
+                <label class="custom-control-label" for="RememberLogin">Remember password</label>
+              </div>
+              <a class="btn btn-primary btn-block" href="Página Inicial.html" role="button">Login</a>
+            </form>
+            <p class="text-center">Já se cadastrou? <a href="Cadastro.html">Cadastre-se já</a></p>
+            <p class="text-center"><a href="https://www.google.com/intl/pt/gmail/about/">Esqueci minha Senha</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Não mexa daqui para baixo!!! -->
+    <script src="./assets/js/vendor/jquery-slim.min.js"></script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
