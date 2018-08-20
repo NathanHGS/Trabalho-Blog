@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
 
     <title>Bootstrap Form</title>
 
@@ -13,6 +14,8 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
 
   </head>
 
@@ -108,30 +111,35 @@
           </div>
 
         <main role="main" class="container">
+
           <div class="row">
+
             <div class="col-md-8 blog-main">
+
               <h3 class="pb-3 mb-4 font-italic border-bottom">
                 Outras coisas
               </h3>
 
               <div class="blog-post">
-                <h2 class="blog-post-title">Sample blog post</h2>
-                <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
-                <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                <h2 class="blog-post-title">Curiosidades sobre McLaren P1</h2>
+
+                <p class="blog-post-meta">20 de Agosto de 2018 por <a href="#">Nathan</a></p>
+
+                <p>
+                  A marca britânica está a utilizar a sua experiência na Fórmula 1 no desenvolvimento do modelo. De acordo com a McLaren,
+                  a carroçaria foi criada com o recurso à dinâmica de fluidos computacional e às ferramentas de simulação de dinâmicas da Fórmula 1.
+                  A marca também está a trabalhar com a fabricante de travões Akebono, com a Pirelli e a Mobil 1 para criar peças exclusivas para o carro.
+                 </p>
+
                 <hr>
-                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-                <blockquote>
-                  <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </blockquote>
-                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                <h2>Heading</h2>
-                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                <h3>Sub-heading</h3>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <pre><code>Example code block</code></pre>
-                <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-                <h3>Sub-heading</h3>
+
+                <img src="img/ferraripaginainicial.jpg" alt="Ferrari" class="my-3">
+
+                <h2 class="display-4 font-italic">Ferrari</h2>
+
+                <p class="blog-post-meta">20 de Agosto de 2018 por <a href="#">Nathan</a></p>
+
                 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                 <ul>
                   <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
@@ -182,9 +190,11 @@
 
             <aside class="col-md-4 blog-sidebar">
 
-              <div class="p-3 mb-3 bg-white rounded">
-                <a href="https://www.epicgames.com/fortnite/pt-BR/buy-now/battle-royale?utm_source=GoogleSearch&utm_medium=Search&utm_campaign=an*YH_pr*FNBR_ct*Search_pl*Brand_co*BR_cr*Broad&utm_id=974655106&utm_content=FNBR_buildtrapdefendwin&utm_term=%2Bfortnite&gclid=EAIaIQobChMIiu3Hncb73AIVEoSRCh1SQAlpEAAYASAAEgKt_PD_BwE" target="_blank"><img src="img/Propaganda pagina inicial.jpg" alt="Fornaite"></a>
+
+              <div id="player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2gUtfBmw86Y?rel=0&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
+
 
               <div class="p-3">
                 <h4 class="font-italic">Archives</h4>
@@ -264,6 +274,53 @@
     </div>
 
     <!-- Não mexa daqui para baixo!!! -->
+
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      player = new YT.Player('player', {
+        videoId: 'M7lc1UVf-VE',
+        playerVars: { 'autoplay': 1, 'controls': 1 },
+        events: {
+          'onReady': onPlayerReady,
+          'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
+          'onStateChange': onPlayerStateChange,
+          'onError': onPlayerError
+        }
+      });
+    }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+
     <script src="./assets/js/vendor/jquery-slim.min.js"></script>
     <script src="./assets/js/vendor/popper.min.js"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
